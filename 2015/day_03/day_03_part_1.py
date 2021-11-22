@@ -3,16 +3,9 @@ path = '^^<<v<<v><v^^<><>^^<v<v^>>^^^><^>v^>v><><><<vv^^<^>^^<v^>v>v^v>>>^<>v<^<
 t = []
 x, y = 0, 0
 for i in range(len(path)):
-    if path[i] == '^':
-        t.append(str(x+1)+'/'+str(y))
-        x+=1
-    if path[i] == 'v':
-        t.append(str(x-1)+'/'+str(y))
-        x-=1
-    if path[i] == '>':
-        t.append(str(x)+'/'+str(y+1))
-        y+=1
-    if path[i] == '<':
-        t.append(str(x)+'/'+str(y-1))
-        y-=1
+    if path[i] == '^': x+=1
+    if path[i] == 'v': x-=1
+    if path[i] == '>': y+=1
+    if path[i] == '<': y-=1
+    t.append(str(x)+'/'+str(y))
 print(len(set(t)))
