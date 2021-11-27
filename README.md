@@ -1,6 +1,6 @@
 # Algorithms of advent-of-code
 
-[pip](https://adventofcode.com/) Advent of Code
+[Advent of Code](https://adventofcode.com/)
 
 2021
 
