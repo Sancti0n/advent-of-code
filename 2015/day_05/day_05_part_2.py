@@ -16,3 +16,15 @@ for i in range(len(lines)):
                         tab.append(lines[i])
 
 print(len(set(tab)))
+
+# REGEX
+
+firstRule = r'(..).*\1'
+secondRule = r'(.).\1'
+t = []
+for i in range(len(lines)):
+    if re.search(firstRule, lines[i]) and re.search(secondRule, lines[i]):
+        t.append(lines[i])
+
+print(t)
+print(len(t))
