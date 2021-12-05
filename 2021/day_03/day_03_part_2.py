@@ -11,7 +11,6 @@ for i in range(len(lines)):
 def maxValue(t, a):
     tValue = [0,0]
     for i in range(len(t)):
-        #print(a)
         if t[i][a] == '0': tValue[0] += 1
         else: tValue[1] += 1
     if tValue[0] == tValue[1]: maxV = 1
