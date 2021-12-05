@@ -29,7 +29,7 @@ def minValue(t, a):
 
 def life(tmax, tmin):
     b = 0
-    while len(tmax) != 1 and b<12:
+    while len(tmax) != 1:
         l = 0
         if b == 0: maxV = str(maxValue(tmax, b))
         while l<len(tmax):
