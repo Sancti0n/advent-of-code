@@ -19,8 +19,7 @@ for i in lines:
 def numb(t):
     d = {}
     for x in t:
-        if x in d:
-            d[x] += 1
+        if x in d: d[x] += 1
         else: d[x] = 1
     return d
 
