@@ -8,4 +8,3 @@ for i in range(len(lines[0])):
     else:
         if lines[0][i] == lines[0][i-1]: v += int(lines[0][i])
 print(v)
-        
