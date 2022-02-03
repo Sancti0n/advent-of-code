@@ -20,4 +20,3 @@ def number(nb, time):
         a += 1
     return w
 print(len(number(input_, 40)))
-
